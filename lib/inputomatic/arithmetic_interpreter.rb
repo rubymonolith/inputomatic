@@ -1,7 +1,12 @@
 module Inputomatic
   class ArithmeticInterpreter
+    CURRENCY_SYMBOLS = "$£¢€¥₩₪₹₫₴₱₲₳₵₸₺₼₽៛₠₡₢₣₤₥₦₧₨₩₪₫€₭₮₯₰₱₲₳₴₵₶₷₸₹₺₻₼₽₾₿ℳ".chars.freeze
+
     def initialize(input, decimal_separator: '.', thousands_separator: ',')
-      @input = input.gsub(/\s+/, '').gsub(thousands_separator, '')
+      @input = input
+        .gsub(/\s+/, '')
+        .gsub(thousands_separator, '')
+        .gsub(Regexp.union(CURRENCY_SYMBOLS), '')
       @decimal_separator = decimal_separator
       @index = 0
     end

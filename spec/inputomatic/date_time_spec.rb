@@ -21,4 +21,8 @@ RSpec.describe Inputomatic::DateTime do
   describe "2023-06-15 18:45:00" do
     it { is_expected.to eql Time.new(2023, 6, 15, 18, 45, 0).gmtime }
   end
+
+  describe "dog" do
+    it { is_expected.to be_nil }
+  end
 end
