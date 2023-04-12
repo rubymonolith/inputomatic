@@ -35,6 +35,14 @@ class Expense < ApplicationRecord
 end
 ```
 
+## Further reading
+
+Learn more about Inputomatic.
+
+* [Humane Rails Forms](https://fly.io/ruby-dispatch/humane-rails-forms/) - Article about how forms can be made more humane in Rails with inputomatic.
+* [Demo App](https://inputomatic-demo.fly.dev) - Demo rails app where you can try the form fields
+* [Demo App Repo](https://github.com/rocketshipio/inputomatic-demo) - Source code of demo app
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
