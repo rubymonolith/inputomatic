@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    inputomatic (0.1.0)
+    inputomatic (0.1.1)
       chronic (~> 0.10)
 
 GEM
